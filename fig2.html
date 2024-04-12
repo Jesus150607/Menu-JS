@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="fig2.css">
+  <title></title>
+</head>
+
+<body>
+  <center>
+<h1>FIGURAS</h1>
+<table>
+  <tr>
+    <td>Ancho</td>
+    <td><input type="range" min="10" max="300" value="10" id="ancho" /> </td>
+    <td><div id="vancho">10</div></td>
+  </tr>
+   <tr>
+    <td>Alto</td>
+    <td><input type="range" min="10" max="300" value="10" id="alto" /> </td>
+    <td><div id="valto">10</div></td>
+  </tr>
+   <tr>
+    <td>Color</td>
+    <td><input type="color" id="color"/> </td>
+
+  </tr>
+   <tr>
+    <td>Ancho Borde</td>
+    <td><input type="range" min="1" max="10" value="1" id="anchob" /> </td>
+        <td><div id="vanchob">1</div></td>
+  </tr>
+      <td>Color del Borde</td>
+    <td><input type="color" id="colorb"/> </td>
+
+  </tr>
+  <td>Tipo de Borde</td>
+     <td><select id="tipob">
+       <option value="solid">Solid</option>
+       <option value="dashed">Dashed</option>
+       <option value="double">Double</option>
+     </select> 
+     </td>
+       <tr>
+    <td>Radius</td>
+    <td><input type="range" min="0" max="100" value="0" id="radius" /> </td>
+        <td><div id="vradius">0</div></td>
+  </tr>
+     <tr>
+    <td>Rotate</td>
+    <td><input type="range" min="1" max="360" value="1" id="rotate" /> </td>
+        <td><div id="vrotate">1</div></td>
+  </tr>
+     <tr>
+    <td>Traslate X</td>
+    <td><input type="range" min="-100" max="100" value="0" id="traslatex" /> </td>
+        <td><div id="vtraslatex">0</div></td>
+  </tr>
+       <tr>
+    <td>Traslate Y</td>
+    <td><input type="range" min="-100" max="100" value="0" id="traslatey" /> </td>
+        <td><div id="vtraslatey">0</div></td>
+  </tr>
+  <tr>
+    <td>Escale</td>
+    <td><input type="range" min="1" max="3" value="1" id="escale" /> </td>
+        <td><div id="vescale">1</div></td>
+  </tr>
+  <tr>
+    <td>Sombra X</td>
+    <td><input type="range" min="-20" max="30" value="0" id="sombrax" /> </td>
+        <td><div id="vsombrax">10</div></td>
+  </tr>
+  <tr>
+    <td>Sombra Y</td>
+    <td><input type="range" min="-20" max="30" value="0" id="sombray" /> </td>
+        <td><div id="vsombray">10</div></td>
+  </tr>
+  <tr> <td>Color de la Sombra</td>
+    <td><input type="color" id="vcolors"/> </td>
+</tr>
+<tr>
+  <td>Tamaño de la Sombra</td>
+  <td><input type="range" min="1" max="30" value="25" id="tams" /> </td>
+      <td><div id="vtams">25</div></td>
+</tr>
+<tr>
+  <td>Difuminacion de la Sombra</td>
+  <td><input type="range" min="1" max="30" value="25" id="dis" /> </td>
+      <td><div id="vdis">25</div></td>
+</tr>
+</table>
+<br><br>
+
+<div id="caja"></div><br><br><br><br><br><br><br><br><br><br>
+
+</center>
+<script>
+const sx=document.querySelector("#sombrax");
+const sy=document.querySelector("#sombray");
+const tms=document.querySelector("#tams");
+const cls=document.querySelector("#vcolors");
+
+function updateShadow(){
+  const v=`${sx.value}px ${sy.value}px ${tms.value}px ${cls.value}`;
+}
+  [sx, sy, tms, cls].forEach(Element =>{
+    Element.oninput=updateShadow;
+  });
+  updateBoxShadow();
+
+
+</script>
+</body>
+
+<script src="fig2.js"></script>
+</html>

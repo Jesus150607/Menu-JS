@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../menujss/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <title></title>
+</head>
+
+<body class="text-center">
+<h1>Tablas de Multiplicar</h1>
+<table class="table w-75 m-auto">
+  <tr>
+    <td>Número:</td>
+    <td><input type="range" min="1" max="100"v value="1" id="numero" class="form-control"></td>
+    <td>
+      <span id="vnumero">1</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <button class="btn btn-success m-2 w-50" id="ver">  Ver  </button>
+      <button class="btn btn-danger m-2 w-50" id="borrar">Borrar</button>
+    </td>
+  </tr>
+</table> 
+<div id="spinner">
+  
+</div>
+<div id="tabla">
+  
+</div>
+
+<script src="tbsp.js">app</script>
+</body>
+
+</html>

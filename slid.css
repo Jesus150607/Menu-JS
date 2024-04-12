@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      
+      text-align: center;
+      background: white;
+      
+      text-shadow: 5px 5px 5px gray;
+   
+  }
+  #value{
+    width: 100px;
+    height: 100px;
+    
+    font-size: 50px;
+    position: absolute;
+    left: 35%;
+    border: 5px solid black;
+   
+  }
+  #cajita{
+    display: block;
+    top: 150px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    padding: 10px;
+    background: blue;
+    position: relative;
+  }

@@ -1,0 +1,59 @@
+body {
+    font-size: 30px;
+    text-align: center;
+    background: white;
+    color: navy;
+    text-shadow: 5px 5px 5px gray;
+ 
+}
+input:focus{
+  color: navy;
+  border-radius: 10px 10px 10px 10px;
+  background: cornflowerblue;
+  transition: 2s all ease;
+  box-shadow: 5px 5px 5px navy;
+ 
+}
+p{
+  font-size: 30px;
+  color: white;
+  
+}
+button{
+  border-radius: 10px 10px 10px ;
+  background: royalblue;
+  color: black;
+  font-size: 10px;
+  width: 70px;
+  height: 40px;
+  border: solid black;
+  font-size: 30px;
+}
+button:hover{
+  transition: 1s all ease;
+  box-shadow: 5px 5px 5px navy;
+}
+#caja{
+  text-align: center;
+  border: 5px solid black;
+  width: 500px;
+  height: 900px;
+  margin: auto;
+  border-radius: 30px;
+  
+}
+#caj{
+ border: 5px solid black;
+  width: 300px;
+  height: 700px; 
+  right: 70px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgb(55,49,148);
+background: linear-gradient(90deg, rgba(55,49,148,1) 0%, rgba(148,160,204,1) 100%);
+}
+#res{
+  color: black;
+  text-shadow: 0px 0px 0px ;
+}
