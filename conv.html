@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../menujss/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<style>
+    div{
+        font-size: 40px;
+        text-shadow: 10px 10px 5px darkgray;
+    }
+</style>
+<body class="text-center">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="spi.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                     CONVERSIONES
+          </a>
+        </div>
+      </nav>
+    <h1 > <i class="bi bi-currency-exchange"></i> Pesos MX</h1>
+    <h2>Pesos MX <input type="range" min="1" max="1000" value="1" id="numero"></h2>
+    <div id="vnum">
+    </div>
+    <button id="borrar" class="btn btn-danger">Borrar</button>
+    <div id="resultado">
+    </div>
+     <script src="conv.js"></script>
+</body>
+</html>

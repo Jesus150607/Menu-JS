@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../menujss/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<style>
+     td{
+          font-size: 30px;
+          color: black;
+          font-family: bold;
+          text-shadow: 5px 5px 5px #618dbd;
+        }
+        h1{
+            text-shadow: 5px 5px 5px #4c74a9; 
+        }
+        #va, #vb, #vc{
+          font-size: 20px;
+          color: black;
+        }
+       
+        #a, #b, #c{
+        width: 500px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px #aed0e2;
+    }
+    #va, #vb, #vc{
+        width: 100px;
+        height: 50px;
+        font-size: 50px;
+    }
+    #contenedor{
+        width: 300px;
+        height: 300px;
+    }
+    #x1, #x2{
+        font-size: 30px;
+    }
+    
+</style>
+<body class="text-center">
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid text-center" >
+          <h1 class="navbar-brand m-auto" href="#">La "Chicharronera" </h1>
+        </div>
+      </nav>
+        </div>
+      </nav>
+
+      <center>
+        <table>
+            <tr>
+                <td colspan="2">Valor de A</td>
+                
+            </tr>
+            <tr>
+                <td><input type="range" min="0" max="20" value="0" id="a"></td>
+                <td> <div id="va"> 0</div></td>
+            </tr>
+            <tr>
+                <td colspan="2">Valor de B</td>
+                
+            </tr>
+            <tr>
+                <td><input type="range" min="0" max="20" value="0" id="b"></td>
+                <td> <div id="vb"> 0</div></td>
+            </tr>
+            <tr>
+                <td colspan="2">Valor de C</td>
+                
+            </tr>
+            <tr>
+                <td><input type="range" min="0" max="20" value="0" id="c"></td>
+                <td> <div id="vc"> 0</div></td>
+            </tr>
+        </table>
+       
+        <div id="contenedor">
+            <div id="x1"></div>
+            <div id="x2"></div>
+        </div>
+    </center>
+<script src="formula.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indice de Masa Corporal</title>
+  <link rel="stylesheet" href="../menujss/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<style>
+  #res{
+    font-size: 70px;
+  }
+  div{
+    font-size: 40px;
+  }
+  #cc{
+    font-size: 40px;
+  }
+  #ccj{
+    font-size: 30px;
+  }
+</style>
+
+<body class="text-center">
+ 
+<h1>Imc</h1>
+<h2>Peso</h2>
+  <input type="range" min="10" max="150" value="10" id="pes" class="form-control" />
+     <div id="vpes">10</div>
+  <h2>Altura</h2>
+  <input type="range" min="50" max="250" value="50" id="alt" class="form-control"/>
+      <div id="valt">50</div> <br>
+     <table align="center" border="1">
+       <tr>
+         <td id="cc">IMC:</td>
+       
+        
+        
+       </tr>
+     </table>
+          <div id="res" width="150px" height="150px">
+           
+         </div>
+         <br><br>
+      <table border="1" cellpadding="2" cellspacing ="2" width="75%" align="center" id="ccj">
+        <tr bgcolor="aqua" id="p1">
+          <td >Infrapeso</td>
+          <td>  < 18.5</td>
+        </tr>
+          <tr bgcolor="springGreen" id="p2">
+          <td>Normal</td>
+          <td>   18.5 a 24.9</td>
+        </tr>
+           <tr bgcolor="yellow" id="p3">
+          <td>Sobrepeso</td>
+          <td>25 a 29.9</td>
+        </tr>
+          <tr bgcolor="orange" id="p4">
+          <td>Obesidad | </td>
+          <td>30 a 34.9</td>
+        </tr>
+          <tr bgcolor="darkOrange" id="p5">
+          <td>Obesidad ||</td>
+          <td>35 a 39.9</td>
+        </tr>
+          <tr bgcolor="orangeRed" id="p6">
+          <td>Obesidad ||| </td>
+          <td> >40  </td>
+        </tr>
+      </table>
+    <script src="imc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signo Zodiacal</title>
+    <link rel="stylesheet" href="../menujss/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+
+<style>
+    #vdia{
+        font-size: 30px;
+        text-shadow: 5px 5px 3px #aed0e2;
+    }
+    #fecha{
+        font-size: 30px;
+        text-shadow: 5px 5px 3px #618dbd;
+    }
+    option{
+        font-size: 20px;
+    }
+#dia{
+   align-content: center;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px cyan;
+}
+  #sig{
+    width: 500px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px cyan;
+    text-align: center;
+  }
+
+</style>
+<body class="text-center">
+    <h1>Signos Zodiacales</h1>
+<h2>Día</h2>
+<center>
+    <input type="range" min="1" max="30" value="1" class="form-control" id="dia" width="200px">
+</center>
+
+<div id="vdia">1</div>
+<h2>Mes</h2>
+<select name="signos" id="sig">
+    <option value="Enero">Enero</option>
+    <option value="Febrero">Febrero</option>
+    <option value="Marzo">Marzo</option>
+    <option value="Abril">Abril</option>
+    <option value="Mayo">Mayo</option>
+    <option value="Junio">Junio</option>
+    <option value="Julio">Julio</option>
+    <option value="Agosto">Agosto</option>
+    <option value="Septiembre">Septiembre</option>
+    <option value="Octubre">Octubre</option>
+    <option value="Noviembre">Noviembre</option>
+    <option value="Diciembre">Diciembre</option>
+</select>
+<h2>Fecha</h2>
+<div id="fecha"></div><br>
+
+
+    <div id="img"></div>
+
+
+
+    <script src="sz.js"></script>
+</body>
+</html>
